@@ -125,7 +125,7 @@ popd >/dev/null 2>&1
 
 start=$(date +%s)
 echo "[build_and_squash] ... Squashing"
-ICON_SQUASH_FILE="${ICON_DIRNAME}.squashfs"
+ICON_SQUASH_FILE="${ICON_DIRNAME}_${TARGET}.squashfs"
 mksquashfs "${ICON_DIRNAME}" "${ICON_SQUASH_FILE}" -no-recovery -noappend -Xcompression-level 3 || exit
 stop=$(date +%s)
 echo "[build_and_squash] ... Squashing => done in $(elapsed $start $stop)"
