@@ -33,7 +33,7 @@ BUILD_DIR="${BUILD_DIR:-$DEFAULT_BUILD_DIR}"
 
 # Uenv
 # ----
-UENV=${UENV:-"icon/26.2:2592285960"}
+UENV=${UENV:-"icon/26.2:2592419933"}
 
 # Helper functions
 # ----------------
